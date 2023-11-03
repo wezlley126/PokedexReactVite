@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+}
+
+.div_pai{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem
+}
+
+.poke{
+    border: 2px solid black;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.poke img{
+    height: 15rem;
+    width: 100%;
+}
+
+.poke input{
+    padding: 1rem 1.5rem;
+}
