@@ -1,4 +1,4 @@
-import './App.css'
+//import './App.css'
 import Poke from './pages/index'
 
 function App() {

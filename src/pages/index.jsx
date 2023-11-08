@@ -14,7 +14,10 @@ function Poke(){
         {
             id: '1',
             nome: 'bulbasaur',
-            img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif'
+            img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif',
+            hp: 45,
+            atk: 49,
+            def: 49,
         }
     )
 
@@ -37,14 +40,17 @@ function Poke(){
             {
                 id: pikamon_data['id'],
                 nome: pikamon_data['name'],
-                img: pikamon_data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
+                img: pikamon_data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'],
+                hp: pikamon_data['stats']['0']['base_stat'],
+                atk: pikamon_data['stats']['1']['base_stat'],
+                def: pikamon_data['stats']['2']['base_stat']
             }
         )
     }
 
     const valoro = (event) => {
         setValue(event.target.value)
-        console.log(value)
+        //console.log(value)
     }
 
     useEffect(() => {
@@ -55,14 +61,14 @@ function Poke(){
 
     return(
         <>
-        <div class='div_pai'>
-            <button>Voltar</button>
-            <div class='poke'>
-                <img src={pikamon['img']} alt="" />
-                <span>{pikamon['nome']}</span><span>{pikamon['id']}</span>
-                <input onChange={valoro} type="text" placeholder='Nome ou Id' />
+        <div className='div_pai'>
+            <input onChange={valoro} className='searchBar' type="text" placeholder='Nome ou Id'/>
+            <span>{pikamon['id']} - {pikamon['nome']}</span>
+            <img className='pikamon_img' src={pikamon['img']} alt="" />
+            <div className='data'>
+                <span className='atk'>ATK</span><span className='def'>DEF</span><span className='life'>LIFE</span>
+                <span className='atk'>{pikamon['atk']}</span><span className='def'>{pikamon['def']}</span><span className='life'>{pikamon['hp']}</span>
             </div>
-            <button>Proximo</button>
         </div>
         </>
     )

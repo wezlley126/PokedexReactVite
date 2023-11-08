@@ -4,26 +4,67 @@
     max-width: 100%;
 }
 
-.div_pai{
+body{
+    background-color: black;
+    color: white;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 2rem
+    justify-content: center;
 }
 
-.poke{
-    border: 2px solid black;
-    padding: 2rem;
-    display: flex;
+.div_pai{
+    border: 2px solid white;
+    padding: 3rem;
+    display: grid;
+    grid-template-rows: 1fr, 2fr, 1fr;
     flex-direction: column;
-    overflow: hidden;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.3rem;
 }
 
-.poke img{
-    height: 15rem;
+.data{
+    /*border: 2px solid blue;*/
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.data span{
+    /*border-left: 2px solid yellow;
+    border-right: 2px solid yellow;*/
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+}
+
+.searchBar{
+    padding: 0.5rem;
+    background-color: white;
+    color: black;
+}
+
+.searchBar:hover, .searchBar:focus{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.pikamon_img{
     width: 100%;
 }
 
-.poke input{
-    padding: 1rem 1.5rem;
+.atk{
+    color: #FF6347;
+}
+
+.def{
+    color: greenyellow
+}
+
+.life{
+    color: #00BFFF;
 }
