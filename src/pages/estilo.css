@@ -9,11 +9,23 @@ body{
     color: white;
     height: 100vh;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
 .div_pai{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.buttons{
+    padding: 0.5rem 1rem;
+}
+
+.div_main{
     border: 2px solid white;
     padding: 3rem;
     display: grid;
