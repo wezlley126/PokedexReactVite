@@ -1,5 +1,5 @@
 import './estilo.css'
-import { useState, useEvent, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 function Poke(){
     
