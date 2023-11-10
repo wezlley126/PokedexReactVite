@@ -10,16 +10,7 @@ function Poke(){
 
     // Cria o dicionário que guardará os dados do pókemon;
 
-    const [pikamon, setPikamon] = useState(
-        {
-            id: '1',
-            nome: 'bulbasaur',
-            img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif',
-            hp: 45,
-            atk: 49,
-            def: 49,
-        }
-    )
+    const [pikamon, setPikamon] = useState({})
 
     const [value, setValue] = useState(1)
 
