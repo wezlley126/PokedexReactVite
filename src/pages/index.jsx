@@ -50,13 +50,13 @@ function Poke(){
 
     const pika_next = () => {
         if(value != 649){
-            setValue(value + 1)
+            setValue(pikamon['id'] + 1)
         }
     }
 
     const pika_return = () => {
         if(value != 1){
-            setValue(value - 1)
+            setValue(pikamon['id'] - 1)
         }
     }
 
